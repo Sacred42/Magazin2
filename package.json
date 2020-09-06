@@ -1,0 +1,31 @@
+{
+  "name": "shopping-cart",
+  "version": "0.0.0",
+  "description": "This repository holds the source code of my YouTube series on how to create a shopping cart with NodeJS/Express/MongoDB",
+  "main": "app.js",
+  "dependencies": {
+    "bcrypt-nodejs": "0.0.3",
+    "body-parser": "^1.19.0",
+    "connect-flash": "^0.1.1",
+    "cookie-parser": "^1.4.5",
+    "csurf": "^1.11.0",
+    "debug": "^4.1.1",
+    "express": "^4.17.1",
+    "express-handlebars": "^5.1.0",
+    "express-session": "^1.17.1",
+    "express-validator": "^5.3.1",
+    "hbs": "^4.1.1",
+    "mongoose": "^5.10.3",
+    "morgan": "^1.10.0",
+    "passport": "^0.4.1",
+    "passport-local": "^1.0.0",
+    "serve-favicon": "^2.5.0",
+    "validator": "^13.1.1"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "start": "node ./bin/www"
+  },
+  "author": "",
+  "license": "ISC"
+}
