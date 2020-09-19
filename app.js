@@ -29,12 +29,13 @@ app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: false }));
 app.use(validator());
 app.use(cookieParser());
-app.use(session({secret: 'mysupersecret', 
+app.use(session({
+           secret: 'mysupersecret', 
            resave: false, 
            saveUninitialized: false,
            store : new MongoStore({mongooseConnection : mongoose.connection}),
            cookie : {
-             maxAge : 1000 * 50 // минимум 30 сек, иначе выдает ошибку
+             maxAge : 1000 * 30 // минимум 30 сек, иначе выдает ошибку
            }
           }));
 app.use(flash());
